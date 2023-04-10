@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Swiper untuk carousel-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>CINE-U</title>
+</head>
+<body>
+    <nav class="container">
+        <div class="logo">
+            <img src="img/CINE U logo 2.svg" alt="logo">
+        </div>
+        
+        <div class="Hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke= '#fff'>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              
+        </div>
+        <div class="top-menu">
+            <div class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke='#fff'>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  
+                  
+            </div>
+            <ul>
+                <li class="active"><a href="#">Movie</a></li>
+                <li><a href="#">Cinema</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Promotions</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <!--carousel-->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/After Login/image 3.svg" alt="img slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/After Login/image 1.svg" alt="img slide">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/After Login/image 4.svg" alt="img slide">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!--Untuk carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+ 
+</body>
+</html>
