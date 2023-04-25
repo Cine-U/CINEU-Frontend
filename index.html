@@ -4,45 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Swiper untuk carousel-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!--Swiper untuk carousel-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+    <!--Upcoming-->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>CINE-U</title>
 </head>
 <body>
-    <nav class="container">
-        <div class="logo">
-            <img src="img/CINE U logo 2.svg" alt="logo">
-        </div>
-        
-        <div class="Hamburger">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke= '#fff'>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              
-        </div>
-        <div class="top-menu">
-            <div class="close">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke='#fff'>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                  
-                  
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="img/CINE U logo 2.svg" alt="logo">
             </div>
-            <ul>
-                <li class="active"><a href="#">Movie</a></li>
-                <li><a href="#">Cinema</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Promotions</a></li>
-            </ul>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item">Movie</li>
+                    <li class="menu-list-item">Cinema</li>
+                    <li class="menu-list-item">News</li>
+                    <li class="menu-list-item">Promotions</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-picture">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>                      
+                </div>
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                    </span>
+                </div>
+            </div>
         </div>
-        
-    </nav>
-    <!--carousel-->
-    <div class="swiper mySwiper">
+      </div>
+
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="img/After Login/image 3.svg" alt="img slide">
@@ -58,12 +63,156 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
-    <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <!--Untuk carousel-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+
+    <!--Grid-->
+    <div class="Container-Clearfix">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+          
+        <input type="text" id="nama-bioskop" placeholder="Cari nama bioskop...">
+        <button onclick="cariBioskop()">Cari</button>
+  
+        <div class="grid-container">
+          <div class="item item1">
+            <img src="img/After Login/image 5.svg" alt="img-upcoming">
+            <h2>Satria Dewa: Gatot Kaca</h2>
+            <h10>Action Advanture Drama </h10>
+            <div>
+              <ul>
+                <li><a href="#">09.45</a><a href="">Theater 1 2D</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="item item2">
+            <img src="img/After Login/image 5.svg" alt="img-upcoming">
+            <h2>Satria Dewa: Gatot Kaca</h2>
+            <h10>Action Advanture Drama </h10>
+            <div>
+              <ul>
+                <li><a href="#">09.45</a><a href="">Theater 1 2D</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+              </ul>
+            </div>
+          </div> 
+          <div class="item item3">
+            <img src="img/After Login/image 5.svg" alt="img-upcoming">
+            <h2>Satria Dewa: Gatot Kaca</h2>
+            <h10>Action Advanture Drama </h10>
+            <div>
+              <ul>
+                <li><a href="#">09.45</a><a href="">Theater 1 2D</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="item item4">
+            <img src="img/After Login/image 5.svg" alt="img-upcoming">
+            <h2>Satria Dewa: Gatot Kaca</h2>
+            <h10>Action Advanture Drama </h10>
+            <div>
+              <ul>
+                <li><a href="#">09.45</a><a href="">Theater 1 2D</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+                <li><a href="#">10.30</a><a href="">Theater 2 IMAX</a></li>
+              </ul>
+            </div>
+          </div> 
+    </div>
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">UPCOMING</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/After Login/image 6.svg" alt="">
+                    <span class="movie-list-item-title">Dungeons & Dragons: Honor Among Thieves</span>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/After Login/image 6.svg" alt="">
+                    <span class="movie-list-item-title">Dungeons & Dragons: Honor Among Thieves</span>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/After Login/image 6.svg" alt="">
+                    <span class="movie-list-item-title">Dungeons & Dragons: Honor Among Thieves</span>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/After Login/image 6.svg" alt="">
+                    <span class="movie-list-item-title">Dungeons & Dragons: Honor Among Thieves</span>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/After Login/image 6.svg" alt="">
+                    <span class="movie-list-item-title">Dungeons & Dragons: Honor Among Thieves</span>
+                </div>
+                <div class="movie-list-item">
+                  <img class="movie-list-item-img" src="img/After Login/image 6.svg" alt="">
+                  <span class="movie-list-item-title">Dungeons & Dragons: Honor Among Thieves</span>
+              </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-menu-col1">
+          <div class="logo-container">
+           <img src="img/CINE U logo 2.svg" alt="logo">
+          </div>
+            <li>Gedung Mewah, Jalan Belak-belok</li> 
+            <li>No 12, Bojongsoang, Bandung 12230</li>
+        </div>
+
+        <div class="footer-menu-col2">
+          <ul class="footer-menu-list">
+            <p>Site Links</p>
+            <li class="footer-menu-list-item">Movie</li>
+            <li class="footer-menu-list-item">Cinema</li>
+            <li class="footer-menu-list-item">News</li>
+            <li class="footer-menu-list-item">Promotions</li>
+          </ul>
+        </div>
+
+        <div class="footer-menu-col3">
+          <ul class="footer-menu-list">
+            <p>Others</p>
+            <li class="footer-menu-list-item">FAQs</li>
+            <li class="footer-menu-list-item">Food and Drinks</li>
+            <li class="footer-menu-list-item">Advertise With Us</li>
+            <li class="footer-menu-list-item">Terms And Conditions</li>
+          </ul>
+        </div>
+        <div class="footer-menu-col4">
+          <p>Stay In Touch</p>
+          <div class="footer-menu-icon">
+            <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </div>
+          <li>Phone : +62 81234567890</li>
+          <li>Email  : cineu@cinecomp.com</li>
+        </div>
+
+      </div>
+      <div id="copyrights">
+        <p>Copyright &copy; 2023 CINE U All rights reserved</p>
+      </div> 
+    </div>
     <script src="js/script.js"></script>
- 
+    <div class="trailer">
+      <video src="https://www.youtube.com/watch?v=IiMinixSXII" autoplay muted></video>
+    </div>
+
 </body>
 </html>
