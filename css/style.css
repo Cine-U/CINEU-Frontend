@@ -33,6 +33,61 @@ body {
     display: flex;
     list-style: none;
 }
+/* ----- Page Movie -----*/
+.main-detail {
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.main-content {
+    /*width: 935px;*/
+    float: left;
+    /*background-color: olive;*/
+}
+.row {
+    /*display: -ms-flexbox;    -ms-flex-wrap: wrap;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.col-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-8 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.main-detail .desc-movie,
+.main-detail .desc-synopsis {
+    list-style: none;
+    margin: 0 0 30px;
+    padding: 0;
+}
+.main-detail .col-4 li,
+.main-detail .col-8 li {
+    font-weight: 300;
+    font-size: 13px;
+    position: relative;
+    text-align: justify;
+    line-height: 1.8;
+    color: #fff;
+}
+.main-detail .desc-movie li span::before {
+    content: ":";
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+.main-detail  h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.main-detail p{
+    color: #fff;
+}
 .menu-list-item{
     margin-right: 30px;
 }
