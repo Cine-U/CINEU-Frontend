@@ -1,0 +1,107 @@
+.row {
+    /*display: -ms-flexbox;    -ms-flex-wrap: wrap;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.col-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-8 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+/*page booking*/
+.booking {
+    padding: 100px 10px;
+}
+
+.booking .row .col-8 {
+    width: 80%;
+}
+.seat {
+    background-color: #444451;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .seat.selected {
+    background-color: green;
+  }
+  
+  .seat.sold {
+    background-color: #fff;
+  }
+  
+  .seat:nth-of-type(2) {
+    margin-right: 18px;
+  }
+  
+  .seat:nth-last-of-type(2) {
+    margin-left: 18px;
+  }
+  
+  .seat:not(.sold):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .showcase .seat:not(.sold):hover {
+    cursor: default;
+    transform: scale(1);
+  }
+  
+  .showcase {
+    background: rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .showcase li small {
+    margin-left: 2px;
+  }
+  
+  .movie-row {
+    display: flex;
+    width: 80%;
+  }
+  
+  .screen {
+    text-align: center;
+    background-color: #fff;
+    height: 120px;
+    width: 80%;
+    margin: 15px 0;
+    transform: rotateX(-48deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  p.text{
+      margin: 5px 0;
+      color: #fff;
+  }
+  
+  p.text span{
+      color: rgb(158, 248, 158);
+
+  }
+
