@@ -41,12 +41,104 @@
           </li>
     
           <li class="nav-item" id="login-icon">
-            <img src="img/login.svg" class="login-icon" alt="login icon">
+            <a href="#loginModal" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <img src="img/login.svg" class="login-icon" alt="login icon">
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logo-login" src="img/CINE U logo 2.svg" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="login-title">Login as User</h3>
+        <form>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+        </form>
+        <h5 class="forgot-pass">Forgot Password?</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn login-btn">Login</button>
+        <div class="signup-prompt">
+          Don’t have an account? <span><button class="btn login-btn-prompt" data-bs-target="#signupModal" data-bs-toggle="modal" data-bs-dismiss="modal">Sign Up</button></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logo-login" src="img/CINE U logo 2.svg" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="login-title">Sign Up as User</h3>
+        <form>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="first name second name">
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+        </form>
+        <h5 class="reminder-pass">Must have a minimum of 8 characters containing at least one uppercase 
+          <br>(A-Z), one lowercase (a-z) and a number (0-9)</h5>
+        <form>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Confirm Password">
+            <label for="floatingPassword">Confirm Password</label>
+          </div>
+        </form>
+        <div class="form-check tickbox">
+          <input
+            class="form-check-input checkbox"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked"
+          />
+          <label class="form-check-label" for="flexCheckChecked">
+            <div class="agreement">
+              Sign Me Up for Weekly Newsletters, Promotions, Upcoming Movies
+            </div>
+          </label>
+        </div>
+        <div class="signup-alert">
+          By continuing, you confirm that you have read and agreed to our <br>
+          <span id="sign-up">Privacy Policy</span> and <span id="sign-up">Terms & Condition</span> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn login-btn">Sign Up</button>
+        <div class="login-prompt">
+          Already a user? <span><button class="btn login-btn-prompt" data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Log In</button></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- HERO CAROUSEL -->
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">

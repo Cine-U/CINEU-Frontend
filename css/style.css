@@ -93,6 +93,118 @@ body {
   padding-top: 10px;
 }
 
+.logo-login {
+  width: 94px;
+  height: 91px;
+}
+
+/* 
+.modal[data-modal-color="black"] .modal-content {
+  background: #101011;
+} */
+
+.modal-body {
+  padding-bottom: 10px;
+}
+
+.login-title {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 26px;
+
+  /* color: #ffffff; */
+  padding-bottom: 10px;
+  margin-left: 3px;
+}
+
+.forgot-pass {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 13px;
+  /* 
+  color: #ffffff; */
+
+  padding-top: 15px;
+  margin-left: 3px;
+}
+
+.reminder-pass {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 13.5px;
+  /* 
+  color: #ffffff; */
+
+  padding-top: 15px;
+  padding-left: 3px;
+  padding-bottom: 10px;
+}
+
+.signup-alert {
+  margin-left: 2px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 13.5px;
+}
+
+.login-btn {
+  width: 545px;
+  height: 65.4px;
+
+  color: #ffffff;
+  background-color: #9f1521;
+}
+
+.login-btn-prompt {
+  color: #e03f4d;
+  background-color: #fff;
+}
+
+.login-btn-prompt:hover {
+  color: #e03f4d;
+  background-color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #323439;
+  color: #fff;
+}
+
+.login-btn:not(:disabled):not(:disabled):active {
+  background-color: #48494c;
+  color: #fff;
+}
+
+.signup-prompt {
+  padding-top: 10px;
+  padding-right: 100px;
+}
+
+.login-prompt {
+  padding-top: 10px;
+  padding-right: 130px;
+}
+
+#sign-up {
+  color: #e03f4d;
+}
+
+#log-in {
+  color: #e03f4d;
+}
+
+.tickbox {
+  margin-left: 2px;
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+.agreement {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 13.5px;
+}
+
 .dropdown-menu {
   margin-left: 800px;
   color: #fff;
