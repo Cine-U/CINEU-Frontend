@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+
+/* BREADCRUMB */
+.breadcrumb-sect {
+  margin-left: 58px;
+}
+
+.breadcrumb-item a {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.row {
+    /*display: -ms-flexbox;    -ms-flex-wrap: wrap;*/
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: 10px; */
+    margin-left: 48px;
+}
+
+#booking-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 33px;
+  color: #e6e6e6;
+  margin-bottom: 5px;
+}
+
+#booking-prompt {
+  font-family: "Raleway";
+  font-weight: 200;
+  font-size: 20px;
+
+  color: #e6e6e6;
+}
+
+.col-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.col-8 {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+/*page booking*/
+.booking {
+  margin-top: 25px;
+}
+
+.booking .row .col-8 {
+    width: 80%;
+}
+
+.seat {
+    background-color: #3FD657;
+    height: 26px;
+    width: 32px;
+    margin: 3px;
+    font-size: 14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: transparent;
+  }
+  
+  .seat.selected {
+    background-color: #EFE4E4;
+  }
+  
+  .seat.sold {
+    background-color: #3C3838;
+  }
+  
+  .seat:nth-of-type(4) {
+    margin-right: 25px;
+  }
+  
+  .seat:nth-last-of-type(2) {
+    margin-left: 18px;
+  }
+  
+  .seat:not(.sold):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .showcase .seat:not(.sold):hover {
+    cursor: default;
+    transform: scale(1);
+  }
+  
+  .showcase {
+    background: rgba(0, 0, 0, 0.1);
+    width: 50%;
+    border-radius: 5px;
+    color: rgba(230, 230, 230, 0.5);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 150px;
+    margin-left: 150px;
+    margin-bottom: 150px;
+  }
+  
+  .showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .showcase li small {
+    margin-left: 2px;
+  }
+
+  .seat-map{
+    margin-left: 300px;
+    margin-bottom: 150px;
+  }
+  
+  .seat-row {
+    display: flex;
+    width: 80%;
+  }
+  
+  .screen {
+    /* background-color: #fff;
+    height: 120px;
+    width: 80%;
+    margin: 15px 0;
+    transform: rotateX(-48deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7); */
+
+    width: 744.04px;
+    height: 42.29px;
+
+    background: #807C7C;
+    border-radius: 14.3029px;
+
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-bottom: 135px;
+  }
+
+  #theater-id{
+    margin: 0px 320px;
+    padding: 12px 0px;
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 13.6846px;
+
+    color: #FFFFFF;
+  }
+  
+  p.text{
+      margin: 5px 0;
+      color: #fff;
+  }
+  
+  p.text span{
+      color: rgb(158, 248, 158);
+
+  }
+
+/* Untuk deskripsi date dan time*/
+.movie-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26.9px;
+  color: #E6E6E6;
+
+  align-items: center;
+
+  margin-bottom: 57px;
+}
+
+.poster-box{
+  margin: 27px 0px 39px 39px;
+}
+
+.Desc-movie {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);*/
+  grid-template: none;
+  /* margin-bottom: 15px; */
+}
+
+.tiket {
+  display: grid;
+  /*grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);*/
+  grid-template: none;
+  /* margin-bottom: 15px; */
+}
+
+.Desc-movie .item,
+.Desc-movie li,
+.Desc-movie span
+ {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: left;
+  color: #fff;
+  list-style: none;
+}
+
+.item1 {
+  font-family: 'Raleway';
+  font-size: 28.889px;
+  
+  color: #E6E6E6;
+
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.item2 {
+  font-family: 'Raleway';
+  font-size: 28.889px;
+  
+  color: #E6E6E6;
+
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.item3 {
+  font-family: 'Raleway';
+  font-size: 28.889px;
+  
+  color: #E6E6E6;
+
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.item4 {
+
+  font-family: 'Raleway';
+  font-size: 28.889px;
+  
+  color: #E6E6E6;
+
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.tiket {
+  border-top: 1px solid #fff;
+}
+
+.tiket ul{
+  padding-top: 45px;
+}
+
+.Desc-movie.tiket ul{
+  margin-bottom: 0px;
+}
+
+.Desc-movie.tiket h5{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 18.889px;
+  
+  color: #E6E6E6;
+  margin-bottom: 11px;
+  margin-top: 33.5px;
+}
+
+/*Untuk Button book ticket*/
+.btn {
+  background-color: #4597D3;
+  border-radius: 10px;
+  border: none;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  /* margin: 4px 2px;
+  cursor: pointer; */
+
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 20.1027px;
+  
+  color: #E6E6E6;
+
+  margin-left: 65px;
+  margin-top: 69px;
+  margin-bottom: 300px;
+
+
+}
