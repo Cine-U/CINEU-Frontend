@@ -104,13 +104,21 @@ function generateVirtualAccountNumber() {
   
       // durasi
       duration--;
-  
+      if (duration > 0)  {
+        // Update timer GoPay timer 
+          document.getElementById("goPayTimer").textContent = "Timer : " + formattedTime;
+          document.getElementById("goPayButton").disabled = true;
+          document.getElementById("goPayButton").style.backgroundColor = "lightgray";
+          document.getElementById("goPayButton").textContent = "Menunggu Pembayaran";
+          document.getElementById("goPayButton").style.color = "green";
+      }
       // Jika timer = 0 , stop timer
-      if (duration < 0) {
+      else {    
         clearInterval(timer);
         // message
-        document.getElementById("goPayTimer").textContent= "Waktu pembayaran habis!";
-        document.getElementById("goPayButton").textContent = "Selesai";
+        document.getElementById("goPayTimer").textContent= '';
+        document.getElementById("goPayButton").disabled = false;
+        document.getElementById("goPayButton").textContent = "Waktu pembayaran habis!";
         // ...
       }
     }, 1000);
@@ -152,11 +160,21 @@ function generateVirtualAccountNumber() {
       duration--;
   
       // Jika timer = 0 , stop timer
-      if (duration < 0) {
+      if (duration > 0)  {
+        // Update timer GoPay timer 
+          document.getElementById("ovoTimer").textContent = "Timer : " + formattedTime;
+          document.getElementById("ovoButton").disabled = true;
+          document.getElementById("ovoButton").style.backgroundColor = "lightgray";
+          document.getElementById("ovoButton").textContent = "Menunggu Pembayaran";
+          document.getElementById("ovoButton").style.color = "green";
+      }
+      // Jika timer = 0 , stop timer
+      else {    
         clearInterval(timer);
         // message
-        document.getElementById("ovoTimer").textContent= "Waktu pembayaran habis!";
-        document.getElementById("ovoButton").textContent = "Selesai";
+        document.getElementById("ovoTimer").textContent= '';
+        document.getElementById("ovoButton").disabled = false;
+        document.getElementById("ovoButton").textContent = "Waktu pembayaran habis!";
         // ...
       }
     }, 1000);
@@ -202,6 +220,23 @@ function generateVirtualAccountNumber() {
         // message
         document.getElementById("danaTimer").textContent= "Waktu pembayaran habis!";
         document.getElementById("danaButton").textContent = "Selesai";
+        // ...
+      }
+      if (duration > 0)  {
+        // Update timer GoPay timer 
+          document.getElementById("danaTimer").textContent = "Timer : " + formattedTime;
+          document.getElementById("danaButton").disabled = true;
+          document.getElementById("danaButton").style.backgroundColor = "lightgray";
+          document.getElementById("danaButton").textContent = "Menunggu Pembayaran";
+          document.getElementById("danaButton").style.color = "green";
+      }
+      // Jika timer = 0 , stop timer
+      else {    
+        clearInterval(timer);
+        // message
+        document.getElementById("danaTimer").textContent= '';
+        document.getElementById("danaButton").disabled = false;
+        document.getElementById("danaButton").textContent = "Waktu pembayaran habis!";
         // ...
       }
     }, 1000);
