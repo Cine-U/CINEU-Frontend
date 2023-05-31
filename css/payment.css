@@ -23,7 +23,8 @@
     margin-right: 10px;
     margin-left: 10px; */
 
-    margin-bottom: 114px;
+    /* margin-bottom: 114px; */
+    margin-bottom: 50px;
 }
 
 .row1{
@@ -46,13 +47,17 @@
 
 
 .col-1 {
-    flex: 0 0 15%;
+    /* flex: 0 0 15%; */
+    flex: 0 0 20%;
     max-width: 20%;
 }
 
 .col-2 {
-    flex: 0 0 70%;
-    max-width: 70%;
+    /* flex: 0 0 70%;
+    max-width: 70%; */
+    
+    flex: 0 0 60%;
+    max-width: 60%;
 }
 
 .movie-title {
