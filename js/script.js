@@ -39,8 +39,6 @@ arrows.forEach((arrow, i) => {
   console.log(Math.floor(window.innerWidth / 270));
 });
 
-<<<<<<< HEAD
-=======
 /**untuk starring */
 const starring_arrows = document.querySelectorAll(".starring .arrow");
 const starring_Lists = document.querySelectorAll(".starring-list");
@@ -79,4 +77,3 @@ mainNav.onclick=e=>  // JS event delegation
     }
   LI.classList.add('active');
   }
->>>>>>> mz

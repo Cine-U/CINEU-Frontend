@@ -1,20 +1,9 @@
 /* ----- Page Movie -----*/
 .main-detail {
-<<<<<<< HEAD
-    padding-right: 100px;
-    padding-top: 100px;
-}
-/*.main-content {
-    /*width: 935px;
-    float: left;
-    background-color: olive;
-}*/
-=======
     margin-left: 35px;
     margin-top:25px;
 }
   
->>>>>>> mz
 .row {
     /*display: -ms-flexbox;    -ms-flex-wrap: wrap;*/
     display: flex;
@@ -22,44 +11,16 @@
     margin-right: 10px;
     margin-left: 10px;
 }
-<<<<<<< HEAD
-=======
   
->>>>>>> mz
 .col-4 {
     flex: 0 0 25%;
     max-width: 25%;
 }
-<<<<<<< HEAD
-
-=======
   
->>>>>>> mz
 .col-8 {
     flex: 0 0 75%;
     max-width: 75%;
 }
-<<<<<<< HEAD
-video {
-    background-color: #323439;
-}
-.main-detail .desc-movie,
-.main-detail .desc-synopsis {
-    list-style: none;
-    margin: 0 0 30px;
-    padding: 0;
-}
-.main-detail .col-4 li,
-.main-detail .col-8 li {
-    font-weight: 300;
-    font-size: 13px;
-    position: relative;
-    text-align: justify;
-    line-height: 1.8;
-    color: #fff;
-}
-.main-detail .desc-movie li span::before {
-=======
 
 .right-side{
     margin-top: 65px;
@@ -97,43 +58,10 @@ video {
 }
 
 /* .main-detail .desc-movie li span::before {
->>>>>>> mz
     content: ":";
     position: absolute;
     top: 0;
     left: 100px;
-<<<<<<< HEAD
-}
-.main-detail  h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;
-}
-.main-detail p{
-    color: #fff;
-}
-
-/*Starring Movie*/
-.starring-list-wrapper {
-    position: relative;
-    overflow: hidden;
-    /*padding: 0 50px;*/
-    margin-bottom: 50px;
-    
-}
-.starring-list{
-    display: flex;
-    align-items: center;
-    height: 200px;
-    transform: translateX(0);
-    transition: all 1s ease-in-out;
-}
-.starring-list-item {
-    background-color: #9F1521;
-    margin-right: 30px;
-    position: relative;
-}
-=======
 } */
 
 .main-detail h4 {
@@ -216,24 +144,11 @@ video {
     position: relative;
 }
 
->>>>>>> mz
 .starring-list-item li {
     align-items: center;
     list-style: none;
 }
 
-<<<<<<< HEAD
-.starring-list-item-img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    transition: all 1s ease-in-out;
-}
-.starring-list-item:hover .movie-list-item-title{
-    opacity: 1;
-}
-.starring .arrow {
-=======
 .starring-list-item ul{
     padding-left: 0px;
     margin-top: 7px;
@@ -251,7 +166,6 @@ video {
 } */
 
 /* .starring{
->>>>>>> mz
     font-size: 50px;
     position: absolute;
     top: 75px;
@@ -259,15 +173,8 @@ video {
     color: lightgray;
     opacity: 0.5;
     cursor: pointer;
-<<<<<<< HEAD
-}
-.showtime .item {
-    background-color: transparent;
-}
-=======
 } */
 
 .showtime .item {
     background-color: transparent;
 }
->>>>>>> mz
