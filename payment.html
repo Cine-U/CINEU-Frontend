@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
   <link rel="icon" href="img/CINE U logo 2.svg" type="image" sizes="30x30">
   <title>CINE-U </title>
-  
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Swiper untuk carousel-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
-
+  
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/movie.css">
-
+  <link rel="stylesheet" href="css/payment.css">
 </head>
 
 <body>
+
     <!-- NAVBAR -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: 090A0B"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: 090A0B">
       <div class="container-fluid">
         <div class="logo-container">
           <img src="img/CINE U logo 2.svg" alt="logo" />
         </div>
+
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item main">
@@ -102,7 +99,7 @@
       </div>
     </nav>
 
-      <!-- BREADCRUMB -->
+    <!-- BREADCRUMB -->
     <div class="breadcrumb-sect">
       <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
         <ol class="breadcrumb">
@@ -111,134 +108,133 @@
           <li class="breadcrumb-item">
             <a href="/movie.html">Satria Dewa: Gatotkaca</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Movie Details</li>
+          <li class="breadcrumb-item"><a href="/movie.html">Movie Details</a></li>
+          <li class="breadcrumb-item"><a href="/booking.html">Ticket Booking</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Payment</li>
         </ol>
       </nav>
     </div>
-    
-    <!-- MAIN DETAIL -->
-    <div class="main-content main-detail">
-      <div class="row">
-        <div class="col-4">
-          <h2 id="movie-title">Satria Dewa: Gatot Kaca</h2>
+
+    <!-- PAYMENT -->
+    <div class="payment">
+    <h3>Payment</h3>
+    <h5>Booking Summary</h5>
+    <div class="row">
+        <div class="col-1">
             <div class="poster-box">
-                <img src="img/landing/gatot.svg" alt="img-upcoming">
-            </div>
-            <div class="desc">
-
-                <ul class="desc-movie">
-                    <h4>Information</h4>
-                    <li class="movie_genre">
-                        <span>Genre: Action | Adventure | Drama</span>
-                    </li>
-                    <li class="movie_language">
-                        <span>Language: English</span>
-                    </li>
-                    <li class="movie_duration">
-                        <span>Duration: 2h 9m</span>
-                    </li>
-                    <li class="movie_age">
-                        <span>Age: SU</span>
-                    </li>
-                </ul>
-
+                <img src="img/landing/gatot.svg" alt="movie poster">
             </div>
         </div>
-
-        <div class="col-8 right-side">
-          <div class="desc-synopsis">                
-              <h4>Synopsis</h4>
-              <p>Legends collide as young Yuda wrestles to unlock newfound god-like powers, defending his world in an endless battle against ancient and powerful evils.
-              </p>
-          </div>
-          <div class="desc-link">
-              <h4>Watch Trailer</h4>
-              <!-- <video id="my-video" controls preload="auto" data-setup="{}">
-                  <source src="video/168075070291237.mp4" type="video/mp4" >
-              </video> -->
-              <div class="video-container">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R7SjBDyaWJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="col-2">
+            <div class="desc-box">
+            <span class="movie-title">Satria Dewa: Gatot Kaca</span>
+            <ul class="desc-movie">
+              <div class="row1">
+                <li class="date">
+                    <span>Date</span> April 30, 2023
+                </li>
+                <li class="time">
+                    <span>Time</span> 10:30 WIB
+                </li>
               </div>
-          </div>
-          <div class="starring">
-              <h4>Starring</h4>
-              <div class="starring-list-wrapper">
-                <div class="starring-list">
-                  <div class="starring-list-item">
-                    <img class="starring-list-item-img" src="img/movie/rizkynazar.jpeg" alt="Rizky Nazar">
-                    <ul>
-                      <li class="cast" style="padding-left: 38px;">Rizky Nazar</li>
-                      <li class="as"></li>
-                    </ul>
-                  </div>
-                  <div class="starring-list-item">
-                    <img class="starring-list-item-img" src="img/movie/yasminnapper.jpeg" alt="Yasmin Napper">
-                    <ul>
-                      <li class="cast" style="padding-left: 24px;">Yasmin Napper</li>
-                      <li class="as" style="padding-left: 60px; font-size: 13px; font-weight: 500;">Agni</li>
-                    </ul>
-                  </div>
-                  <div class="starring-list-item">
-                    <img class="starring-list-item-img" src="img/movie/AghninyHaque.jpeg" alt="Aghniny Haque">
-                    <ul>
-                      <li class="cast" style="padding-left: 26px;">Aghniny Haque</li>
-                      <li class="as"></li>
-                    </ul>
-                  </div>
-                  <div class="starring-list-item">
-                    <img class="starring-list-item-img" src="img/movie/ceceparif.jpeg" alt="Cecep Arif Rahman">
-                    <ul>
-                      <li class="cast" style="padding-left: 13px;">Cecep Arif Rahman</li>
-                      <li class="as" style="padding-left: 47px; font-size: 13px; font-weight: 500;">Pandega</li>
-                    </ul>
-                  </div>
-                  <div class="starring-list-item">
-                    <img class="starring-list-item-img" src="img/movie/fedinuril.jpeg" alt="Fedi Nuril">
-                    <ul>
-                      <li class="cast" style="padding-left: 43px;">Fedi Nuril</li>
-                      <li class="as"></li>
-                    </ul>
-                  </div>
-                  <div class="starring-list-item">
-                    <img class="starring-list-item-img" src="img/movie/omardaniel.jpeg" alt="Omar Daniel">
-                    <ul>
-                      <li class="cast" style="padding-left: 34px;">Omar Daniel</li>
-                      <li class="as" style="padding-left: 45px; font-size: 13px; font-weight: 500;">Dananjaya</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- <i class="fas fa-chevron-right arrow"></i> -->
+              <div class="row2">
+                <li class="theater">
+                    <span>Theater</span> 2
+                </li>
+                <li class="experience">
+                    <span>Experience</span> IMAX
+                </li>
               </div>
+              <hr id="row23">
+              <div class="row3">
+                <li class="qty">
+                    <span>Tickets</span>4
+                </li>
+                <li class="price">
+                    <span>Price</span> Rp.200.000
+                </li>
+              </div>
+            </ul>
             </div>
-
-            <div class="showtime">
-              <h4>Show Time</h4>
-
-              <!-- <div class="movie-location">
-                <label for="movie-location"><h5 style="font-family: 'Raleway'; font-weight: 600; font-size: 15px; color: #E6E6E6;">Date</h5></label>
-              </div> -->
-
-              <div class="movie-date">
-                <label for="movie-date"><h5 style="font-family: 'Raleway'; font-weight: 600; font-size: 15px; color: #E6E6E6;">Date</h5></label>
-                <form action="">
-                  <input type="date" id="birthday" name="birthday">
-                </form>
-              </div>
-
-              <div class="item" style="margin-left: 0px">
-                <ul>
-                  <li><a href="#"><span id="sched-time">09.45</span></a><a href="/booking.html">Theater 1 <br> 2D</a></li>
-                  <li><a href="#"><span id="sched-time">10.30</span></a><a href="/booking.html">Theater 2 <br> IMAX</a></li>
-                  <li><a href="#"><span id="sched-time">10.30</span></a><a href="/booking.html">Theater 2 <br> IMAX</a></li>
-                  <li><a href="#"><span id="sched-time">10.30</span></a><a href="/booking.html">Theater 2 <br> IMAX</a></li>
-                  <li><a href="#"><span id="sched-time">10.30</span></a><a href="/booking.html">Theater 2 <br> IMAX</a></li>
-                </ul>
-              </div> 
-            </div>
-      </div>
-      </div>
+        </div>
     </div>
 
+    <!--Perubahan collase horizontal-->
+    <h5>Payment Method</h5>
+    <div class="container">
+      <h2>Pilih Metode Pembayaran</h2>
+
+      <div class="row-pembayaran">
+        <!--BCA-->
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#virtualAccountCollapse" aria-expanded="false" aria-controls="virtualAccountCollapse">
+        Virtual Account BCA
+      </button>
+      <div class="collapse" id="virtualAccountCollapse">
+        <div class="card card-body">
+          <h4>Virtual Account</h4>
+          <p>Nomor Virtual Account: <span id="virtualAccountNumber"></span></p>
+          <p>Timer: <span id="virtualAccountTimer"></span></p>
+        </div>
+      </div>
+
+      <!--MANDIRI-->
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#vaMandiri_Collapse" aria-expanded="false" aria-controls="vaMandiri_Collapse">
+        Virtual Account Mandiri
+      </button>
+      <div class="collapse" id="vaMandiri_Collapse">
+        <div class="card card-body">
+          <h4>Virtual Account</h4>
+          <p>Nomor Virtual Account: <span id="vaMandiri_Number"></span></p>
+          <p>Timer: <span id="vaMandiri_Timer"></span></p>
+        </div>
+      </div>
+
+      <!--GOPAY-->
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#goPayCollapse" aria-expanded="false" aria-controls="goPayCollapse">
+        GoPay
+      </button>
+      <div class="collapse" id="goPayCollapse">
+        <div class="card card-body">
+          <h4>GoPay</h4>
+          <p>Nomor GoPay: <span id="goPayNumber"></span></p>
+          <p><span id="goPayTimer"></span></p>
+          <button id="goPayButton"class="btn btn-success" onclick="bayarGoPay()">Bayar</button>
+        </div>
+      </div>
+
+      <!--OVO-->
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ovoCollapse" aria-expanded="false" aria-controls="ovoCollapse">
+        OVO
+      </button>
+      <div class="collapse" id="ovoCollapse">
+        <div class="card card-body">
+          <h4>OVO</h4>
+          <p>Nomor OVO: <span id="ovoNumber"></span></p>
+          <p><span id="ovoTimer"></span></p>
+          <button id="ovoButton" class="btn btn-success" onclick="bayarOVO()">Bayar</button>
+        </div>
+      </div>
+
+      <!--DANA-->
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#danaCollapse" aria-expanded="false" aria-controls="danaCollapse">
+        DANA
+      </button>
+      <div class="collapse" id="danaCollapse">
+        <div class="card card-body">
+          <h4>DANA</h4>
+          <p>Nomor DANA: <span id="danaNumber"></span></p>
+          <p><span id="danaTimer"></span></p>
+          <button id="danaButton" class="btn btn-success" onclick="bayarDANA()">Bayar</button>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    
+    <!-- akhir Perubahan collase horizontal-->
+    </div>
+  
     <!--FOOTER-->
     <div class="footer">
       <div class="footer-container">
@@ -253,7 +249,7 @@
             No 12, Bojongsoang, Bandung 12230
           </li>
         </div>
-
+        
         <div class="footer-menu-col2">
           <ul class="footer-menu-list">
             <p style="padding-bottom: 43px">Site Links</p>
@@ -263,7 +259,7 @@
             <li class="footer-menu-list-item">Promotions</li>
           </ul>
         </div>
-
+        
         <div class="footer-menu-col3">
           <ul class="footer-menu-list">
             <p style="padding-bottom: 43px">Others</p>
@@ -273,7 +269,7 @@
             <li class="footer-menu-list-item">Terms And Conditions</li>
           </ul>
         </div>
-
+        
         <div class="footer-menu-col4">
           <p style="padding-bottom: 43px">Stay In Touch</p>
           <div class="footer-menu-icon">
@@ -287,9 +283,9 @@
                   class="bi bi-facebook"
                   viewBox="0 0 16 16"
                   style="color: #fff;"
-                >
+                  >
                   <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
                   />
                 </svg>
               </a>
@@ -321,15 +317,15 @@
                   class="bi bi-twitter"
                   viewBox="0 0 16 16"
                   style="color: #fff;"
-                >
+                  >
                   <path
-                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
                 </a>
-            </li>
-            <li>
-              <a href="" target="_blank">
-                <svg
+              </li>
+              <li>
+                <a href="" target="_blank">
+                  <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30px"
                   height="42px"
@@ -340,7 +336,7 @@
                 >
                   <path
                     d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
-                  />
+                    />
                 </svg>
               </a>
             </li>
@@ -355,13 +351,19 @@
       </div>
 
       <hr />
-
+      
       <div id="copyrights">
         <p>Copyright &copy; 2023 CINE U All rights reserved</p>
       </div>
     </div>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    
+    <script src="js/payment.js"></script>
     <script src="js/script.js"></script>
-</body>
-</html>
+    
+  </body>
+  
+  </html>
